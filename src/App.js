@@ -7,7 +7,8 @@ function App() {
       songTitle:"Love Gun",
       artist:"Kiss",
       genre:"Rock-N-Roll",
-
+      album:"Love Gun",
+      releaseDate:"June 30, 1977",
     }
    ]
   return (
