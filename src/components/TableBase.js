@@ -1,42 +1,45 @@
 import React from 'react'
-import { useTable } from 'react-table'
-import { COLUMNS, COLUMNS } from './table'
+// import { useTable } from 'react-table'
+// import { COLUMNS } from './table'
 
-export const TableBase = () => {
+export const TableBase = (props) => {
 
-    const columns = useMemo(() => COLUMNS, [])
-    const data = null 
+    // const columns = useMemo(() => COLUMNS, [])
+    // const data = null 
 
-    const tableInstance = useTable({
-        columns,
-        data: null
+    // const tableInstance = useTable({
+    //     columns,
+    //     data: null
 
-    })
+    // })
 
-    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow} = tableInstance
+    // const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow} = tableInstance
 
 
     return(
-        <table {...getTableProps()}>
-           <thead>
-               {
-                   headerGroups.map(headerGroup => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map(column =>(
-                    <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-                    ))}
-                </tr>
-                ))}
-            </thead>
-            <tbody {...getTableProps()}>
-                <tr>
-                    <td>
+        // <table {...getTableProps()}>
+        //    <thead>
+        //        {
+        //            headerGroups.map(headerGroup => (
+        //         <tr {...headerGroup.getHeaderGroupProps()}>
+        //             {headerGroup.headers.map(column =>(
+        //             <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+        //             ))}
+        //         </tr>
+        //         ))}
+        //     </thead>
+        //     <tbody {...getTableProps()}>
+        //         <tr>
+        //             <td>
 
-                    </td>
-                </tr>
-            </tbody> 
+        //             </td>
+        //         </tr>
+        //     </tbody> 
 
-        </table>
+        // </table>
+        <div>
+            <h1>{props.items[0].songTitle}</h1>
+        </div>
 
     )
 }
