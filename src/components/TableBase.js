@@ -1,6 +1,7 @@
 import React from 'react'
-import { useTable } from 'react-table'
+// import { useTable } from 'react-table'
 import { COLUMNS } from './table'
+import './table.css'
 
 export const TableBase = (props) => {
 
